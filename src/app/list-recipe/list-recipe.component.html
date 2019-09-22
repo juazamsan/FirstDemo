@@ -1,0 +1,12 @@
+<input id="input" type="text" size="30" [(ngModel)]="recipeFilter" (keyup)="changeText()" pInputText placeholder="Enter a recipe:"> 
+Page of Results:<input id="input" type="text" size="3" [(ngModel)]="numberPage" (keyup)="changePage()" pInputText > 
+
+<p-orderList [value]="recipes" >
+    <ng-template let-recipe pTemplate="item" >
+        <div class="ui-helper-clearfix" >
+            <img src="{{recipe.thumbnail}}" style="display:inline-block;margin:2px 0 2px 2px" width="68">
+            <div style="font-size:14px;float:right;margin:15px 5px 0 0">{{recipe.title}}- <b>INGREDIENTS:</b>{{recipe.ingredients}}</div>
+        </div>
+    </ng-template>
+</p-orderList>
+

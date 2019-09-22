@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.ui-orderlist .ui-orderlist-list {
+    height: 500px !important;
+    width: 120% !important;
+}
+
+.ui-orderlist-controls{
+    display:none;   
+}
+
+.ui-orderlist-item{
+    border:solid !important;
+}
